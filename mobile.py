@@ -17,7 +17,7 @@ db = mysql.connector.connect(user='root', password='root',
 
 cursor = db.cursor()
 
-concurrent = 200
+concurrent = 10
 finished=itertools.count(1)
 reactor.suggestThreadPoolSize(concurrent)
 
